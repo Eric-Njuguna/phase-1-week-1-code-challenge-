@@ -17,16 +17,20 @@
 
   <script> 
     function checkCarSpeed(){
-      speed = prompt("Please enter your speed", "");
-      
+      speed = prompt("Please enter your speed");
+
+      // Condition to check the speed
       if(speed < 70){
         output = 'Ok';
       } 
       else if(speed > 70){
+        // Calculates the point deductions
         let demeritPointCalculator = (speed - 70)/5;
         output = demeritPointCalculator < 12? `Points: ${demeritPointCalculator}` : `License suspended`;
       }
-      document.getElementById("demo").innerHTML = output;
+      
+      return document.getElementById("demo").innerHTML = output;
+      
     }
   </script>
 
