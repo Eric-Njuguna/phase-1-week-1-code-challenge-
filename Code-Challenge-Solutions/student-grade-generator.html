@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <h1>WEEK 1 CODE CHALLENGE</h1>
+  <h2>Challenge 1: Student Grade Generator</h2>
+
+  <p>Click the button to Enter your grade.</p>
+
+  <button onclick="inputStudentMarks()">BUTTON</button>
+
+  <p id="demo"></p>
+
+  <script>
+
+  function inputStudentMarks(){
+    marks = prompt("Please enter your marks", "");
+    if(marks > 79 && marks <= 100){
+      result = 'A';
+    } else if (marks >= 60 && marks <= 79) {
+      result = 'B';
+    } else if (marks > 49 && marks <= 59) {
+      result = 'C';
+    } else if (marks >= 40 && marks <= 49) {
+      result = 'D';
+    } else if (marks >= 0 && marks <= 39) {
+      result = 'E';
+    } else {
+      result = 'Enter marks that are between 0 and 100';
+    }
+    document.getElementById("demo").innerHTML =
+    result;
+  }
+
+  </script>
+
+</body>
+</html>
