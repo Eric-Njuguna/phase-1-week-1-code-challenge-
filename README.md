@@ -1,4 +1,5 @@
-# phase-1-week-1-code-challenge-
+# phase-1-week-1-code-challenge
+The solutions to these challenges are in Java Script embedded in the html files
 
 Challenge 1: Student Grade Generator (Toy Problem)
 I've created a function called inputStudentMarks which prompts the user for input(which are the marks), validates the input, and correctly maps the input to the appropriate grade.
